@@ -2,7 +2,7 @@ Summary:	Professional Audio Tools
 Summary(pl):	Profesjonalne Narzêdzia Audio
 Name:		protux
 Version:	0.20.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
@@ -42,7 +42,9 @@ proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--with-mustux-lib-dir=%{_libdir} \
+	--with-qt-lib-dir=%{_libdir}
 %{__make}
 
 %install
