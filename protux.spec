@@ -1,20 +1,21 @@
 Summary:	Professional Audio Tools
 Summary(pl):	Profesjonalne Narzêdzia Audio
 Name:		protux
-Version:	0.20.0
-Release:	0.1
+Version:	0.20.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-#Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
-Source0:	ftp://ftp.gnu.org/savannah/files/protux/%{name}-%{version}.tar.gz
-# Source0-md5:	dacb13bf1ef9b7a6cbed707a2af75eea
+Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
+# Source0-md5:	9fe44d4df01309a52570c60c58a5a231
 URL:		http://www.nongnu.org/protux/
-Patch0:		%{name}-long.patch
-BuildRequires:	autoconf
+BuildRequires:	alsa-lib-devel >= 0.9.0
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	libmustux-devel
-BuildRequires:	libtool
+BuildRequires:	libmustux-devel >= 0.20.1
+# checked for but not used
+#BuildRequires:	libogg-devel
+BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	qt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,10 +35,8 @@ proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
