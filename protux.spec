@@ -6,6 +6,7 @@ License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
 #Source0-md5:	00653c37500c8b74ac9dbcad963f49c3
+Source1:	%{name}-acinclude.m4
 URL:		http://www.nongnu.org/protux/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -22,6 +23,7 @@ empty
 %setup -q
 
 %build
+cp -f %{SOURCE1} acinclude.m4
 %{__aclocal}
 %{__autoconf}
 %{__automake}
