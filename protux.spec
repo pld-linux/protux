@@ -1,13 +1,12 @@
 Summary:	Professional Audio Tools for GNU/Linux
 Summary(pl):	Profesjonalne Narzêdzia Audio dla GNU/Linuksa
 Name:		protux
-Version:	0.16.0
-Release:	0.1
+Version:	0.19.3
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
-#Source0-md5:	00653c37500c8b74ac9dbcad963f49c3
-Source1:	%{name}-acinclude.m4
+# Source0-md5:	978cbd0c4db3cda2fb4326fe682d9c83
 URL:		http://www.nongnu.org/protux/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,11 +34,12 @@ przyspieszyæ proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
 %setup -q
 
 %build
-cp -f %{SOURCE1} acinclude.m4
+rm -f missing
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
-%{__perl} admin/am_edit
 %configure
 %{__make}
 
