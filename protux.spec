@@ -5,7 +5,8 @@ Version:	0.20.0
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
+#Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnu.org/savannah/files/protux/%{name}-%{version}.tar.gz
 # Source0-md5:	dacb13bf1ef9b7a6cbed707a2af75eea
 URL:		http://www.nongnu.org/protux/
 Patch0:		%{name}-long.patch
