@@ -8,6 +8,7 @@ Group:		X11/Applications/Sound
 Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
 # Source0-md5:	978cbd0c4db3cda2fb4326fe682d9c83
 URL:		http://www.nongnu.org/protux/
+Patch0:		%{name}-long.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -32,6 +33,7 @@ przyspieszyæ proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
