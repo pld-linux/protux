@@ -1,12 +1,12 @@
 Summary:	Professional Audio Tools for GNU/Linux
 Summary(pl):	Profesjonalne Narzêdzia Audio dla GNU/Linuksa
 Name:		protux
-Version:	0.19.3
-Release:	1
+Version:	0.20.0
+Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://savannah.nongnu.org/download/protux/%{name}-%{version}.tar.gz
-# Source0-md5:	978cbd0c4db3cda2fb4326fe682d9c83
+# Source0-md5:	dacb13bf1ef9b7a6cbed707a2af75eea
 URL:		http://www.nongnu.org/protux/
 Patch0:		%{name}-long.patch
 BuildRequires:	autoconf
@@ -33,7 +33,7 @@ przyspieszyæ proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 rm -f missing
