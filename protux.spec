@@ -12,7 +12,9 @@ URL:		http://www.nongnu.org/protux/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	libmustux-devel
 BuildRequires:	libtool
+BuildRequires:	qt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,6 +39,7 @@ cp -f %{SOURCE1} acinclude.m4
 %{__aclocal}
 %{__autoconf}
 %{__automake}
+%{__perl} admin/am_edit
 %configure
 %{__make}
 
@@ -53,3 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/protux
