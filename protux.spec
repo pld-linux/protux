@@ -1,5 +1,5 @@
-Summary:	Professional Audio Tools for GNU/Linux
-Summary(pl):	Profesjonalne Narzêdzia Audio dla GNU/Linuksa
+Summary:	Professional Audio Tools for Linux
+Summary(pl):	Profesjonalne Narzêdzia Audio dla Linuksa
 Name:		protux
 Version:	0.20.0
 Release:	0.1
