@@ -1,5 +1,5 @@
 Summary:	Professional Audio Tools
-Summary(pl):	Profesjonalne Narzêdzia Audio
+Summary(pl.UTF-8):   Profesjonalne NarzÄ™dzia Audio
 Name:		protux
 Version:	0.20.1
 Release:	2
@@ -26,12 +26,12 @@ keyboard+mouse combination (with no clicks) to vastly speed up the
 process of audio production. The authors call this concept
 "Jog-Mouse-Board" or JMB, for short.
 
-%description -l pl
-Protux ma byæ najbardziej praktycznym i jednym z najpotê¿niejszych
-narzêdzi d¼wiêkowych dla Linuksa. Protux pozwoli na u¿ycie potêgi
-po³±czenia klawiatura+mysz (bez klikania), aby wybitnie przyspieszyæ
-proces produkcji d¼wiêku. Autorzy nazywaj± ten pomys³
-"Jog-Mouse-Board", w skrócie JMB.
+%description -l pl.UTF-8
+Protux ma byÄ‡ najbardziej praktycznym i jednym z najpotÄ™Å¼niejszych
+narzÄ™dzi dÅºwiÄ™kowych dla Linuksa. Protux pozwoli na uÅ¼ycie potÄ™gi
+poÅ‚Ä…czenia klawiatura+mysz (bez klikania), aby wybitnie przyspieszyÄ‡
+proces produkcji dÅºwiÄ™ku. Autorzy nazywajÄ… ten pomysÅ‚
+"Jog-Mouse-Board", w skrÃ³cie JMB.
 
 %prep
 %setup -q
