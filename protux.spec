@@ -1,5 +1,5 @@
 Summary:	Professional Audio Tools
-Summary(pl.UTF-8):   Profesjonalne Narzędzia Audio
+Summary(pl.UTF-8):	Profesjonalne Narzędzia Audio
 Name:		protux
 Version:	0.20.1
 Release:	2
