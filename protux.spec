@@ -11,7 +11,7 @@ URL:		http://www.nongnu.org/protux/
 BuildRequires:	alsa-lib-devel >= 0.9.0
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	libmustux-devel >= 0.20.1
 # checked for but not used
 #BuildRequires:	libogg-devel
